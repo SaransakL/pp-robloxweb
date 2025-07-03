@@ -60,7 +60,10 @@ details {
   margin-top: 8px;
   border: none;
   cursor: pointer;
-  fot-weight: 600;
+}
+
+details summary {
+  font-weight: 600;
 }
 
 ul {
