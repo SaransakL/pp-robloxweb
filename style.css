@@ -50,8 +50,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:active {
+  opacity: 0.5;
 }
 
 details {
