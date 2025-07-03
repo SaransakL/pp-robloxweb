@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
 
+:root {
+  --bg-color: #0f0f11;
+  --primary: #bb86fc;
+  --border-color: #3f3f3f;
+  --text-light: #e0e0e0;
+  --text-medium: #cccccc;
+  --text-muted: #888888;
+  --section-bg: #1a1a1a;
+}
+
 * {
   font-family: 'Noto Sans Thai', sans-serif;
   box-sizing: border-box;
@@ -8,8 +18,8 @@
 }
 
 body {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: var(--bg-color);
+  color: var(--text-light);
   line-height: 1.6;
 }
 
@@ -21,6 +31,8 @@ body {
 
 .header {
   margin-bottom: 24px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 12px;
 }
 
 .title {
@@ -31,6 +43,9 @@ body {
 
 section {
   margin-bottom: 32px;
+  padding: 16px;
+  background-color: var(--section-bg);
+  border: 2px solid var(--border-color);
 }
 
 h2 {
@@ -38,27 +53,31 @@ h2 {
   font-weight: 700;
   margin-bottom: 12px;
   color: #ffffff;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 4px;
 }
 
-p, li, summary {
+p,
+li,
+summary {
   font-size: 1rem;
-  color: #cccccc;
+  color: var(--text-medium);
 }
 
 a {
-  color: #bb86fc;
+  color: var(--primary);
   text-decoration: none;
 }
 
 a:active {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 details {
   background-color: #1e1e1e;
   padding: 12px;
   margin-top: 8px;
-  border: none;
+  border: 2px solid var(--border-color);
   cursor: pointer;
 }
 
@@ -73,21 +92,8 @@ ul {
 }
 
 .footer {
-  border-top: 1px solid #2e2e2e;
+  border-top: 2px solid var(--border-color);
   padding-top: 16px;
   font-size: 0.9rem;
-  color: #888888;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #bb86fc;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  text-align: center;
-  border: none;
-  outline: none;
+  color: var(--text-muted);
 }
