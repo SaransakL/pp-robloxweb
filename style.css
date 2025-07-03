@@ -29,7 +29,7 @@ body {
   color: #ffffff;
 }
 
-.update-log, .play-section, .developer-section, .discord-section {
+section {
   margin-bottom: 32px;
 }
 
