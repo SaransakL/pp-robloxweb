@@ -18,25 +18,40 @@
         <p>ติดตามข่าวสารและอัปเดตล่าสุดของโปรเจกต์</p>
       </header>
 
-      <section id="update-log" class="update-log">
-        <h2>ประวัติการอัปเดต</h2>
-        <details class="update-entry">
-          <summary>v2025.7.3</summary>
-          <ul>
-            <li>เพิ่ม HD Admin</li>
-            <li>เปลี่ยนจาก Shift เป็น Ctrl เพื่อล็อกเมาส์บนคอมพิวเตอร์</li>
-            <li>แก้ไขข้อผิดพลาด</li>
-          </ul>
-        </details>
-        <details class="update-entry">
-          <summary>v2025.6.30</summary>
-          <ul>
-            <li>เพิ่มระบบวิ่ง</li>
-            <li>เพิ่มสิ่งก่อสร้าง</li>
-            <li>แก้ไขข้อผิดพลาด</li>
-          </ul>
-        </details>
-      </section>
+      <section class="update-log">
+  <h2>ประวัติการอัปเดต</h2>
+  <!-- ตรงนี้จะเติมข้อมูลด้วย JS -->
+</section>
+
+<script>
+fetch('update-log.json')
+  .then(response => response.json())
+  .then(data => {
+    const logSection = document.getElementById('update-log');
+    data.forEach(entry => {
+      const details = document.createElement('details');
+      details.className = 'update-entry';
+      
+      const summary = document.createElement('summary');
+      summary.textContent = entry.version;
+      details.appendChild(summary);
+      
+      const ul = document.createElement('ul');
+      entry.changes.forEach(change => {
+        const li = document.createElement('li');
+        li.textContent = change;
+        ul.appendChild(li);
+      });
+      
+      details.appendChild(ul);
+      logSection.appendChild(details);
+    });
+  })
+  .catch(error => {
+    console.error('Error loading update log:', error);
+  });
+</script>
+
 
       <footer class="footer">
         <p>Powered by <a href="https://vercel.com">Vercel</a></p>
