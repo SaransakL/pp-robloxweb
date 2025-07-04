@@ -18,44 +18,15 @@
         <p>ติดตามข่าวสารและอัปเดตล่าสุดของโปรเจกต์</p>
       </header>
 
-      <section class="update-log">
-  <h2>ประวัติการอัปเดต</h2>
-  <!-- ตรงนี้จะเติมข้อมูลด้วย JS -->
-</section>
-
-<script>
-fetch('update-log.json')
-  .then(response => response.json())
-  .then(data => {
-    const logSection = document.getElementById('update-log');
-    data.forEach(entry => {
-      const details = document.createElement('details');
-      details.className = 'update-entry';
-      
-      const summary = document.createElement('summary');
-      summary.textContent = entry.version;
-      details.appendChild(summary);
-      
-      const ul = document.createElement('ul');
-      entry.changes.forEach(change => {
-        const li = document.createElement('li');
-        li.textContent = change;
-        ul.appendChild(li);
-      });
-      
-      details.appendChild(ul);
-      logSection.appendChild(details);
-    });
-  })
-  .catch(error => {
-    console.error('Error loading update log:', error);
-  });
-</script>
-
+      <section id="update-log" class="update-log">
+        <h2>ประวัติการอัปเดต</h2>
+        <!-- JS จะเติมข้อมูลตรงนี้ -->
+      </section>
 
       <footer class="footer">
         <p>Powered by <a href="https://vercel.com">Vercel</a></p>
       </footer>
     </main>
+    <script src="update-log.js"></script>
   </body>
 </html>
