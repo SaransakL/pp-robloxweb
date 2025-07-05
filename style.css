@@ -108,3 +108,11 @@ ul {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+
+.play-banner {
+  height: 300px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /* จัดกลางแนวนอน */
+  align-items: center;     /* จัดกลางแนวตั้ง */
+}
