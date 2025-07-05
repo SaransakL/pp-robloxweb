@@ -69,10 +69,15 @@ summary {
 a {
   color: var(--primary);
   text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 a:active {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 details {
@@ -81,6 +86,11 @@ details {
   margin-top: 8px;
   border: 2px solid var(--border-color);
   cursor: pointer;
+  transition: 0.3s;
+}
+
+details[open] {
+  background-color: var(--border-color);
 }
 
 details summary {
