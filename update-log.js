@@ -1,11 +1,5 @@
 const updateData = [
   {
-    version: "v2025.7.5",
-    changes: [
-      "เพิ่มไอเท็ม Megaphone (โทรโข่ง)",
-    ]
-  },
-  {
     version: "v2025.7.3",
     changes: [
       "เพิ่ม HD Admin",
@@ -20,13 +14,29 @@ const updateData = [
       "เพิ่มสิ่งก่อสร้าง",
       "แก้ไขข้อผิดพลาด"
     ]
+  },
+  {
+    version: "v2025.7.5",
+    changes: [
+      "เพิ่มไอเทมใหม่ Megaphone (โทรโข่ง)",
+    ]
   }
 ];
 
 const logSection = document.getElementById('update-log');
 
-// เรียงลำดับใหม่ -> เก่า
-updateData.slice().reverse().forEach(entry => {
+// 🔁 จัดเรียงตามเวอร์ชันแบบตัวเลข (ใหม่ → เก่า)
+const sortedData = updateData.sort((a, b) => {
+  const parseVersion = (v) => v.replace("v", "").split('.').map(Number);
+  const [ay, am, ad] = parseVersion(a.version);
+  const [by, bm, bd] = parseVersion(b.version);
+
+  if (ay !== by) return by - ay;
+  if (am !== bm) return bm - am;
+  return bd - ad;
+});
+
+sortedData.forEach(entry => {
   const details = document.createElement('details');
   details.className = 'update-entry';
 
