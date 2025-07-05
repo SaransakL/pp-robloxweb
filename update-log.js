@@ -1,5 +1,11 @@
 const updateData = [
   {
+    version: "v2025.7.5",
+    changes: [
+      "เพิ่มไอเท็ม Megaphone (โทรโข่ง)",
+    ]
+  },
+  {
     version: "v2025.7.3",
     changes: [
       "เพิ่ม HD Admin",
@@ -19,7 +25,8 @@ const updateData = [
 
 const logSection = document.getElementById('update-log');
 
-updateData.forEach(entry => {
+// เรียงลำดับใหม่ -> เก่า
+updateData.slice().reverse().forEach(entry => {
   const details = document.createElement('details');
   details.className = 'update-entry';
 
