@@ -88,6 +88,10 @@ details {
   transition: 0.3s;
 }
 
+details:hover {
+  background-color: var(--border-color);
+}
+
 details[open] {
   background-color: var(--border-color);
 }
@@ -115,4 +119,19 @@ ul {
   display: flex;
   justify-content: center; /* จัดกลางแนวนอน */
   align-items: center;     /* จัดกลางแนวตั้ง */
+  transition: 0.3s;
+}
+
+.play-banner img {
+  width: 250px;
+  animation: pulse-scale 1s ease-in-out infinite;
+}
+
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
