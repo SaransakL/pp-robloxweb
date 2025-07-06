@@ -125,3 +125,16 @@ ul {
 .play-banner img {
   width: 325px;
 }
+
+.update-entry[open] summary + div {
+  max-height: auto;
+  opacity: 1;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.update-entry summary + div {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
