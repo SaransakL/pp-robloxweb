@@ -123,15 +123,5 @@ ul {
 }
 
 .play-banner img {
-  width: 250px;
-  animation: pulse-scale 1s ease-in-out infinite;
-}
-
-@keyframes pulse-scale {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
+  width: 325px;
 }
