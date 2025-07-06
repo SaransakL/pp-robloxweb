@@ -68,7 +68,6 @@ summary {
 a {
   color: var(--primary);
   text-decoration: none;
-  transition: 0.3s;
 }
 
 a:hover {
@@ -85,11 +84,6 @@ details {
   margin-top: 8px;
   border: 2px solid var(--border-color);
   cursor: pointer;
-  transition: 0.3s;
-}
-
-details:hover {
-  background-color: var(--border-color);
 }
 
 details[open] {
@@ -119,7 +113,6 @@ ul {
   display: flex;
   justify-content: center; /* จัดกลางแนวนอน */
   align-items: center;     /* จัดกลางแนวตั้ง */
-  transition: 0.3s;
 }
 
 .play-banner img {
