@@ -44,13 +44,16 @@ sortedData.forEach(entry => {
   summary.textContent = entry.version;
   details.appendChild(summary);
 
+  const content = document.createElement('div'); // 👈 ใช้ div แทน ul
   const ul = document.createElement('ul');
+
   entry.changes.forEach(change => {
     const li = document.createElement('li');
     li.textContent = change;
     ul.appendChild(li);
   });
 
-  details.appendChild(ul);
+  content.appendChild(ul);
+  details.appendChild(content);
   logSection.appendChild(details);
 });
