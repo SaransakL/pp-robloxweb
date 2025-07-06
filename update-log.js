@@ -18,7 +18,7 @@ const updateData = [
   {
     version: "v2025.7.5",
     changes: [
-      "เพิ่มไอเทมใหม่ Megaphone (โทรโข่ง)",
+      "เพิ่มไอเทมใหม่ Megaphone (โทรโข่ง)"
     ]
   }
 ];
@@ -30,12 +30,12 @@ const sortedData = updateData.sort((a, b) => {
   const parseVersion = (v) => v.replace("v", "").split('.').map(Number);
   const [ay, am, ad] = parseVersion(a.version);
   const [by, bm, bd] = parseVersion(b.version);
-
   if (ay !== by) return by - ay;
   if (am !== bm) return bm - am;
   return bd - ad;
 });
 
+// 🔧 แสดงรายการอัปเดตพร้อม animation
 sortedData.forEach(entry => {
   const details = document.createElement('details');
   details.className = 'update-entry';
@@ -44,7 +44,7 @@ sortedData.forEach(entry => {
   summary.textContent = entry.version;
   details.appendChild(summary);
 
-  const content = document.createElement('div'); // 👈 ใช้ div แทน ul
+  const contentDiv = document.createElement('div');
   const ul = document.createElement('ul');
 
   entry.changes.forEach(change => {
@@ -53,7 +53,7 @@ sortedData.forEach(entry => {
     ul.appendChild(li);
   });
 
-  content.appendChild(ul);
-  details.appendChild(content);
+  contentDiv.appendChild(ul);
+  details.appendChild(contentDiv);
   logSection.appendChild(details);
 });
