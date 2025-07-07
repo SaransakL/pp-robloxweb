@@ -25,6 +25,7 @@ const updateData = [
     version: "v2025.7.7",
     changes: [
       "ลบเพลงประกอบเกม",
+      "ลบ HD Admin",
       "ลบไอเทม Megaphone (โทรโข่ง)",
       "แก้ไขข้อผิดพลาด"
     ]
