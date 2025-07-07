@@ -108,7 +108,7 @@ ul {
 }
 
 .play-banner {
-  height: 300px;
+  height: 275px;
   cursor: pointer;
   display: flex;
   justify-content: center; /* จัดกลางแนวนอน */
