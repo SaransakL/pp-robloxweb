@@ -34,6 +34,13 @@ const updateData = [
       "เพิ่มปุ่มเชิญเพื่อน",
       "เพิ่มปุ่มบริจาคให้นักพัฒนา",
     ]
+  },
+  {
+    version: "v2025.8.10",
+    changes: [
+      "ปรับปรุง UI",
+      "เปลี่ยนฟ้อนต์ จาก Builder Sans (Noto Sans Thai) เป็น Prompt",
+    ]
   }
 ];
 
