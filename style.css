@@ -33,14 +33,7 @@ body {
   margin-bottom: 24px;
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 12px;
-}
-
-.title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 section {
