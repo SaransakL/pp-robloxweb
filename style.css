@@ -53,7 +53,8 @@ h2 {
 
 p,
 li,
-summary {
+summary,
+span {
   font-size: 1rem;
   color: var(--text-medium);
 }
