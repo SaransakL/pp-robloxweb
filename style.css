@@ -123,3 +123,22 @@ ul {
 .play-banner img {
   width: 300px;
 }
+
+.social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social li {
+  margin-bottom: 8px;
+}
+
+.social a {
+  color: var(--primary);
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.social a:hover {
+  opacity: 0.7;
+}
