@@ -125,14 +125,19 @@ ul {
   width: 300px;
 }
 
+.social {
+}
+
 .social-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
-  margin-top: 8px;
 }
 
 .social-links a {
-  font-size: 2rem;
+  margin: 0 10px;
+  font-size: 4rem;
   color: var(--primary);
 }
 
