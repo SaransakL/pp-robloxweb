@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --bg-color: #0f0f11;
+  --bg-color: #120d16;
   --primary: #935eb2;
-  --border-color: #3f3f3f;
-  --text-light: #e0e0e0;
-  --text-medium: #cccccc;
-  --text-muted: #888888;
-  --section-bg: #1a1a1a;
+  --border-color: #3c2f47;
+  --text-light: #f0e6f7;
+  --text-medium: #d2bce3;
+  --text-muted: #9c7fb0;
+  --section-bg: #1d1623;
+  --section-alt: #1e1826;
+  --highlight: #ffffff;
 }
 
 * {
@@ -15,6 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: 0.3s;
 }
 
 body {
@@ -34,6 +37,12 @@ body {
   padding-bottom: 12px;
 }
 
+.logo {
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
 section {
   margin-bottom: 32px;
   padding: 16px;
@@ -45,7 +54,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 12px;
-  color: #ffffff;
+  color: var(--highlight);
   padding-bottom: 4px;
 }
 
@@ -71,7 +80,7 @@ a:active {
 }
 
 details {
-  background-color: #1e1e1e;
+  background-color: var(--section-alt);
   padding: 12px;
   margin-top: 8px;
   border: 2px solid var(--border-color);
@@ -83,7 +92,7 @@ details[open] {
 }
 
 details summary {
-  color: #ffffff;
+  color: var(--highlight);
   font-weight: 500;
 }
 
@@ -103,8 +112,12 @@ ul {
   height: 275px;
   cursor: pointer;
   display: flex;
-  justify-content: center; /* จัดกลางแนวนอน */
-  align-items: center;     /* จัดกลางแนวตั้ง */
+  justify-content: center;
+  align-items: center;
+}
+
+.play-banner:active {
+  background-color: var(--border-color);
 }
 
 .play-banner img {
