@@ -110,7 +110,7 @@ ul {
 }
 
 .play-banner {
-  height: 275px;
+  height: 375px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -122,10 +122,7 @@ ul {
 }
 
 .play-banner img {
-  width: 300px;
-}
-
-.social {
+  height: 100%;
 }
 
 .social-links {
