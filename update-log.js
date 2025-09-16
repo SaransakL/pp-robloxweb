@@ -1,8 +1,9 @@
 const updateData = [
   {
-    version: "version",
+    version: "v2025.9.16",
     changes: [
-      "changes",
+      "เพิ่มไอเทม (โทรศัพท์)",
+      "แก้ไขข้อผิดพลาด",
     ]
   }
 ];
