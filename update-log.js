@@ -1,8 +1,29 @@
 const updateData = [
   {
-    version: "v2025.9.16",
+    version: "v2025.11.11",
     changes: [
-      "เพิ่มไอเทม (โทรศัพท์)",
+      "Nickin Anti-Cheat 2.0",
+      "แก้ไขข้อผิดพลาด",
+    ]
+  },
+  {
+    version: "v2025.11.11 Part 2",
+    changes: [
+      "นำระบบ Nickin Anti-Cheat ออก",
+      "แก้ไขข้อผิดพลาด",
+    ]
+  },
+  {
+    version: "v2025.11.12",
+    changes: [
+      "แก้ไขข้อผิดพลาด",
+    ]
+  },
+  {
+    version: "v2025.11.13",
+    changes: [
+      "นำระบบ Day/Night Cycle ออก",
+      "ปรับระบบวิ่งบนมือถือ",
       "แก้ไขข้อผิดพลาด",
     ]
   }
