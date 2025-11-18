@@ -14,7 +14,7 @@
 }
 
 * {
-  filter: greyscale(100%);
+  filter: grayscale(100%);
   font-family: 'Mitr', sans-serif;
   box-sizing: border-box;
   margin: 0;
