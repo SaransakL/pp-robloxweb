@@ -2,15 +2,15 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
 :root {
-  --bg-color: #120d16;
-  --primary: #935eb2;
-  --border-color: #3c2f47;
-  --text-light: #f0e6f7;
-  --text-medium: #d2bce3;
-  --text-muted: #9c7fb0;
-  --section-bg: #1d1623;
-  --section-alt: #1e1826;
-  --highlight: #ffffff;
+  --bg-color: #000;
+  --primary: #fff;
+  --border-color: #222;
+  --text-light: #fff;
+  --text-medium: #fff;
+  --text-muted: #fff;
+  --section-bg: #111;
+  --section-alt: #111;
+  --highlight: #fff;
 }
 
 * {

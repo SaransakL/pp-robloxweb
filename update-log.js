@@ -2,6 +2,7 @@ const updateData = [
   {
     version: "ยังไม่ได้บันทึกข้อมูล",
     changes: [
+
     ]
   }
 ];
@@ -24,6 +25,7 @@ sortedData.forEach(entry => {
 
   const summary = document.createElement('summary');
   summary.textContent = entry.version;
+  summary.title = entry.version;
   details.appendChild(summary);
 
   const ul = document.createElement('ul');
