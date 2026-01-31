@@ -1,10 +1,10 @@
 const updateData = [
   {
-    version: "ยังไม่ได้บันทึกข้อมูล",
+    version: "v2026.1.30",
     changes: [
-
+      "แก้ไขข้อผิดพลาด",
     ]
-  }
+  },
 ];
 
 const logSection = document.getElementById('update-log');
