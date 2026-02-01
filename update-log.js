@@ -1,6 +1,12 @@
 const updateData = [
   {
-    version: "v2026.1.30",
+    version: "v2026.01.30",
+    changes: [
+      "แก้ไขข้อผิดพลาด",
+    ]
+  },
+  {
+    version: "v2026.02.01",
     changes: [
       "แก้ไขข้อผิดพลาด",
     ]
