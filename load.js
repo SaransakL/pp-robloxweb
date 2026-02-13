@@ -18,3 +18,26 @@ function loadHTML(divId, file) {
 for (const [divId, file] of Object.entries(components)) {
   loadHTML(divId, file);
 }
+
+const galleryImages = document.querySelectorAll(".gallery-item img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("lightbox-close");
+
+galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add("active");
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.classList.remove("active");
+    }
+});
+
