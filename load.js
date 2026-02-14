@@ -23,10 +23,12 @@ const galleryImages = document.querySelectorAll(".gallery-item img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.getElementById("lightbox-close");
+const downloadBtn = document.getElementById("lightbox-download");
 
 galleryImages.forEach(img => {
     img.addEventListener("click", () => {
         lightboxImg.src = img.src;
+        downloadBtn.href = img.src;
         lightbox.classList.add("active");
     });
 });
@@ -36,10 +38,11 @@ closeBtn.addEventListener("click", () => {
 });
 
 lightbox.addEventListener("click", (e) => {
-    if (e.target !== lightboxImg) {
+    if (e.target !== lightboxImg && e.target !== downloadBtn) {
         lightbox.classList.remove("active");
     }
 });
+
 
 const backToTop = document.getElementById("backToTop");
 
