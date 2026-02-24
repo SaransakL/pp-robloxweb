@@ -1,27 +1,116 @@
+<!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ติดต่อพวกเรา - P.P. | Roblox Project</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.P. | Roblox Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
 </head>
 <body>
-  <div id="header"></div>
-  <main>
-    <a href="#"><button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button></a>
-    <section id="hero">
-        <div class="hero-content">
-            <h1>ติดต่อพวกเรา</h1>
-            <p>หากมีข้อสงสัย ข้อเสนอแนะ หรือสนใจร่วมงานกับเรา<br>สามารถติดต่อเราได้ทาง</p>
-            <div class="hero-buttons">
-                <a target="_blank" href="mailto:s4ransak@hotmail.com"><button><i class="fa-solid fa-envelope"></i> Email</button></a>
-                <a target="_blank" href="https://discord.gg/JYCNfrBTrC"><button><i class="fa-brands fa-discord"></i> Discord</button></a>
-                <a target="_blank" href="https://instagram.com/pp_rblxth"><button><i class="fa-brands fa-instagram"></i> Instagram</button></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="logo_white.png" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">หน้าหลัก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#screenshot">ภาพหน้าจอ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#team">ทีมงาน</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="">ร้านค้า</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">ติดต่อ</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <section class="py-5 text-light" style="background: linear-gradient(#000000, #9a04c590), url('thumb.png') no-repeat center center/cover;">
+    <div class="container">
+        <div class="row text-center g-5">
+            <h1 class="fw-bold">ติดต่อพวกเรา</h1>
+        </div>
+    </div>
     </section>
-  </main>
-<div id="footer"></div>
-  <script src="load.js"></script>
+
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+    <div class="col-lg-6">
+
+        <div class="card bg-opacity-75 border-0 text-dark">
+            <div class="card-body p-4">
+
+                <form id="contactForm" method="POST">
+                    <!-- ชื่อ -->
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control border-secondary" placeholder="ชื่อ" data-bs-toggle="modal" data-bs-target="#exampleModal" required>
+                    </div>
+
+                    <!-- อีเมล -->
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control border-secondary" placeholder="อีเมล" data-bs-toggle="modal" data-bs-target="#exampleModal" required>
+                    </div>
+
+                    <!-- หัวข้อ -->
+                    <div class="mb-3">
+                        <input type="text" name="subject" class="form-control border-secondary" placeholder="หัวข้อ" data-bs-toggle="modal" data-bs-target="#exampleModal" required>
+                    </div>
+
+                    <!-- ข้อความ -->
+                    <div class="mb-3">
+                        <textarea name="message" rows="8"
+                            class="form-control border-secondary"
+                            required placeholder="ข้อความ" data-bs-toggle="modal" data-bs-target="#exampleModal"></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            ส่งข้อความ
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <footer class="text-dark text-center p-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025-<script type="text/javascript">document.write(new Date().getFullYear());</script> สงวนลิขสิทธิ์ทุกประการ</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">เกิดข้อผิดพลาด</h1>
+      </div>
+      <div class="modal-body">
+        ในขณะนี้แบบฟอร์มนี้ยังไม่สามารถใช้งานได้<br><br>โปรดติดต่อพวกเราที่<br>
+        <a href="https://discord.gg/JYCNfrBTrC" target="_blank">ดิสคอร์ด <i class="bi bi-box-arrow-up-right"></i></a> หรือ
+        <a href="mailto:s4ransak@hotmail.com" target="_blank">ส่งอีเมลทันที <i class="bi bi-envelope"></i></a> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

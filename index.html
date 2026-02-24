@@ -1,173 +1,229 @@
+<!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P.P. | Roblox Project</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .hero-content h1 span {
-        font-family: 'Roboto Mono', monospace;
-    }
-    .hero-content h1 i {
-        font-size: 2rem;
-        font-weight: 300;
-        font-style: normal;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.P. | Roblox Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
-  <div id="header"></div>
-  <main>
-    <a href="#"><button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button></a>
-    <section id="hero">
-  <div class="hero-content">
-    <p>นับถอยหลังวันเปิดแมพ</p>
-    <h1><span>00</span> <i>วัน</i> <span>00</span> <i>ชั่วโมง</i> <span>00</span> <i>นาที</i> <span>00</span> <i>วินาที</i></h1>
-  </div>
-</section>
-    
-    <section id="about">
-        <div class="split-section">
-            <div class="split-image">
-                <img src="pp-web-character.png" alt="ตัวอย่างรูปภาพ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="logo_white.png" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">หน้าหลัก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#screenshot">ภาพหน้าจอ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#team">ทีมงาน</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="">ร้านค้า</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 text-light" style="background: linear-gradient(#000000, #9a04c590), url('thumb.png') no-repeat center center/cover;">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="pp-web-character.png" class="img-fluid">
             </div>
 
-            <div class="split-content">
-                <h2>ยินดีต้อนรับสู่รั้วม่วงขาว</h2>
+            <div class="col-lg-6">
+                <h1 class="fw-bold mb-3">ยินดีต้อนรับสู่รั้วม่วงขาว</h1>
                 <p>
-                    ที่นี่ไม่ใช่แค่สถานที่สำหรับเล่นเกม แต่คือพื้นที่สำหรับสร้างความสัมพันธ์ ทำกิจกรรมร่วมกัน และเก็บเกี่ยวประสบการณ์ใหม่ ๆ กับเพื่อน ๆ ของคุณ เตรียมตัวให้พร้อม แล้วมาสร้างเรื่องราวบทใหม่ไปด้วยกัน
+                    ที่นี่ไม่ใช่แค่สถานที่สำหรับเล่นเกม แต่คือพื้นที่สำหรับสร้างความสัมพันธ์ <br>ทำกิจกรรมร่วมกัน และเก็บเกี่ยวประสบการณ์ใหม่ๆ กับเพื่อนๆ ของคุณ <br>เตรียมตัวให้พร้อม แล้วมาสร้างเรื่องราวบทใหม่ไปด้วยกัน 
                 </p>
+                <!--button type="button" onclick="window.location.href='roblox://'" class="btn btn-light btn-lg fw-semibold"><i class="bi bi-play-fill"></i> เล่นเลยตอนนี้</button -->
             </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="py-5" id="screenshot">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h1 class="fw-bold">ภาพหน้าจอ</h1>
+            </div>
+            <div class="row g-4">
+
+    <div class="col-sm-6 col-md-4">
+        <img src="https://placehold.co/1920x1080"
+             class="img-fluid rounded"
+             alt="">
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <img src="https://placehold.co/1920x1080"
+             class="img-fluid rounded"
+             alt="">
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <img src="https://placehold.co/1920x1080"
+             class="img-fluid rounded"
+             alt="">
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <img src="https://placehold.co/1920x1080"
+             class="img-fluid rounded"
+             alt="">
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <img src="https://placehold.co/1920x1080"
+             class="img-fluid rounded"
+             alt="">
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <img src="https://placehold.co/1920x1080"
+             class="img-fluid rounded"
+             alt="">
+    </div>
+
+</div>
         </div>
     </section>
 
-    <!-- section id="screenshots">
-        <div class="heading">ภาพหน้าจอ</div>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="RobloxScreenShot20260202_214722956.png"></div>
-            <div class="gallery-item"><img src="https://placehold.co/1920x1080?text=Placeholder"></div>
-            <div class="gallery-item"><img src="https://placehold.co/1920x1080?text=Placeholder"></div>
-            <div class="gallery-item"><img src="https://placehold.co/1920x1080?text=Placeholder"></div>
-            <div class="gallery-item"><img src="https://placehold.co/1920x1080?text=Placeholder"></div>
-            <div class="gallery-item"><img src="https://placehold.co/1920x1080?text=Placeholder"></div>
+
+<section class="py-5" id="team">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <h1 class="fw-bold">ทีมงานของเรา</h1>
         </div>
-    </section-->
 
-    <section id="team">
-            <div class="heading">ทีมงานของเรา</div>
-            <div class="team-grid">
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A148B64BBC31CBBEE9F7670E3A4897B1-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>เอ็กซ์ สรันศักดิ์</h3>
-                        <p>หัวหน้าโปรเจกต์และผู้พัฒนา</p>
-                    </div>
-                </div>
+        <div class="row g-4 justify-content-center">
 
-                <!-- dev -->
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-BCF1D67131E82E9BF532E69CAE2CEAD0-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>แทน ณัฐวัฒน์</h3>
-                        <p>ผู้พัฒนา</p>
-                    </div>
-                </div>
-
-                <!-- mod -->
-                  <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-31E7906017AFE8B97DB87F0B02D0BCE8-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>ว่าน ธีรภัทร</h3>
-                        <p>ผู้ดูแล</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-467F5F4AFE35BF960C8174F05768AAFC-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>เฟิสต์ อัษฎาวุธ</h3>
-                        <p>ผู้ดูแล</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-339F50DDD864E3718A0FEC1FCE2E4EF1-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>ต้นหม่อน พัชรพล</h3>
-                        <p>ผู้ดูแล</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9696BA34CC9B6FE31F8EE8A541DAE225-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>เฟียต ยศภัทร</h3>
-                        <p>ผู้ดูแล</p>
-                    </div>
-                </div>
-
-                <!--qa-->
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-4864A62B0C19CC3CAD5230940AF540A2-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>ซัน ฐานะพัฒน์</h3>
-                        <p>ผู้ทดสอบ</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-F4FC670C33F9A3609BEC154E2E613F8E-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
-                    <div class="team-overlay">
-                        <h3>ไอติม ธนภูมิ</h3>
-                        <p>ผู้ทดสอบ</p>
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-2B6E16BBBFB3E546F7A400DA9F8D3EDB-Png/720/720/AvatarHeadshot/Webp/noFilter"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">Saransak</h5>
+                        <p class="text-muted small">หัวหน้าโปรเจกต์และผู้พัฒนา</p>
                     </div>
                 </div>
             </div>
-            <a href="contact.html"><button><i class="fa-solid fa-envelope"></i> ติดต่อพวกเรา</button></a>
-        </section>
 
-<div id="lightbox">
-    <span id="lightbox-close">
-        <i class="fa-solid fa-xmark"></i>
-    </span>
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">TanSriwisa</h5>
+                        <p class="text-muted small">ผู้พัฒนา</p>
+                    </div>
+                </div>
+            </div>
 
-    <a id="lightbox-download" download style="display: none;">
-        <i class="fa-solid fa-download"></i>
-    </a>
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">OrcawhalesX</h5>
+                        <p class="text-muted small">ผู้ดูแล</p>
+                    </div>
+                </div>
+            </div>
 
-    <img id="lightbox-img" src="" alt="">
-</div>
-  </main>
-  <div id="footer"></div>
-  <script src="load.js"></script>
-  <script>
-const targetDate = new Date("November 30, 2026 00:00:00").getTime();
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-339F50DDD864E3718A0FEC1FCE2E4EF1-Png/720/720/AvatarHeadshot/Webp/noFilter"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">SOMSOM</h5>
+                        <p class="text-muted small">ผู้ดูแล</p>
+                    </div>
+                </div>
+            </div>
 
-const spans = document.querySelectorAll("#hero h1 span");
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">OrcawhalesX</h5>
+                        <p class="text-muted small">ผู้ดูแล</p>
+                    </div>
+                </div>
+            </div>
 
-function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">TanSriwisa</h5>
+                        <p class="text-muted small">ผู้พัฒนา</p>
+                    </div>
+                </div>
+            </div>
 
-    if (distance <= 0) {
-        document.querySelector("#hero h1").innerHTML = "แมพเปิดแล้ว!";
-        clearInterval(timer);
-        return;
-    }
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">OrcawhalesX</h5>
+                        <p class="text-muted small">ผู้ดูแล</p>
+                    </div>
+                </div>
+            </div>
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((distance / (1000 * 60)) % 60);
-    const seconds = Math.floor((distance / 1000) % 60);
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-center border-0 bg-light h-100">
+                    <div class="card-body">
+                        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-F4FC670C33F9A3609BEC154E2E613F8E-Png/720/720/AvatarHeadshot/Webp/noFilter"
+                             class="rounded-circle mb-3"
+                             width="120"
+                             height="120">
+                        <h5 class="fw-bold mb-1">itim_thailand12345</h5>
+                        <p class="text-muted small">ผู้ทดสอบ</p>
+                    </div>
+                </div>
+            </div>
 
-    spans[0].textContent = String(days).padStart(2, "0");
-    spans[1].textContent = String(hours).padStart(2, "0");
-    spans[2].textContent = String(minutes).padStart(2, "0");
-    spans[3].textContent = String(seconds).padStart(2, "0");
-}
+        </div>
+    </div>
+</section>
 
-const timer = setInterval(updateCountdown, 1000);
-updateCountdown();
-</script>
+    <footer class="text-dark text-center p-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025-<script type="text/javascript">document.write(new Date().getFullYear());</script> สงวนลิขสิทธิ์ทุกประการ</p>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-
 </html>
-
